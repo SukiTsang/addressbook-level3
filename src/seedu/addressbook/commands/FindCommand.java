@@ -22,7 +22,16 @@ public class FindCommand extends Command {
     public FindCommand(Set<String> keywords) {
         this.keywords = keywords;
     }
-
+    
+    /**
+	 * *Check whether the data mutates
+	 * 
+	 * @return true if the data mutates
+	 */
+	public boolean isMutating() {
+		return false;
+	};
+	
     /**
      * Returns copy of keywords in this command.
      */
