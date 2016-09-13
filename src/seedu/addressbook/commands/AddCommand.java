@@ -26,6 +26,14 @@ public class AddCommand extends Command {
 
     private final Person toAdd;
 
+   /**
+	 * *Check whether the data mutates
+	 * 
+	 * @return true if the data mutates
+	 */
+	public boolean isMutating() {
+		return true;
+	};
     /**
      * Convenience constructor using raw values.
      *
