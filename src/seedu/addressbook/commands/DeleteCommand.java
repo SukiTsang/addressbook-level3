@@ -19,6 +19,14 @@ public class DeleteCommand extends Command {
 
     public static final String MESSAGE_DELETE_PERSON_SUCCESS = "Deleted Person: %1$s";
 
+    /**
+	 * *Check whether the data mutates
+	 * 
+	 * @return true if the data mutates
+	 */
+	public boolean isMutating() {
+		return true;
+	};
 
     public DeleteCommand(int targetVisibleIndex) {
         super(targetVisibleIndex);
