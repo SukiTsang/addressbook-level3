@@ -23,6 +23,15 @@ public class HelpCommand extends Command {
 
     public HelpCommand() {}
 
+    /**
+	 * *Check whether the data mutates
+	 * 
+	 * @return true if the data mutates
+	 */
+	public boolean isMutating() {
+		return false;
+	};
+	
     @Override
     public CommandResult execute() {
         return new CommandResult(MESSAGE_ALL_USAGES);
