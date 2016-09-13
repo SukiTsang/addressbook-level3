@@ -42,9 +42,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have)  - `* *`,  Low (un
 Priority | As a ... | I want to ... | So that I can...
 -------- | :-------- | :--------- | :-----------
 `* * *` | new user | see usage instructions | refer to instructions when I forget how to use the App
-`* * *` | user | add a new person |
+`* * *` | user | add a new person | 
 `* * *` | user | delete a person | remove entries that I no longer need
+`* * *` | user | edit a person | change the details of different person
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
+`* *` | user | check all entries of the AddressBook | know who is on the list
 `* *` | user | hide [private contact details](#private-contact-detail) by default | to minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
 
@@ -65,6 +67,18 @@ Use case ends.
 
 **Extensions**
 
+#### Use case: Edit tag
+
+**MSS**
+
+1. User requests to edit tag
+2. AddressBook shows a list of tags
+3. User requests to edit a specific tag in the list
+4. AddressBook updates the tag <br>
+Use case ends.
+
+**Extensions**
+
 2a. The list is empty
 
 > Use case ends
@@ -80,6 +94,7 @@ Use case ends.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
+5. Should be user-friendly 
 
 ## Appendix D : Glossary
 
