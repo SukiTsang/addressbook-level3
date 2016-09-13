@@ -13,6 +13,14 @@ public class ClearCommand extends Command {
 
     public ClearCommand() {}
 
+    /**
+	 * *Check whether the data mutates
+	 * 
+	 * @return true if the data mutates
+	 */
+	public boolean isMutating() {
+		return true;
+	};
 
     @Override
     public CommandResult execute() {
