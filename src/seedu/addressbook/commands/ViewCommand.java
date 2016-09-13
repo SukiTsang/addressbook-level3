@@ -23,8 +23,15 @@ public class ViewCommand extends Command {
     public ViewCommand(int targetVisibleIndex) {
         super(targetVisibleIndex);
     }
-
-
+    /**
+	 * *Check whether the data mutates
+	 * 
+	 * @return true if the data mutates
+	 */
+	public boolean isMutating() {
+		return false;
+	};
+	
     @Override
     public CommandResult execute() {
         try {
